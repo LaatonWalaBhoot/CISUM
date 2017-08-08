@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:paddingRight="8dp"
+    android:paddingEnd="8dp"
+    android:background="@drawable/element_shape_list"
+    android:descendantFocusability="blocksDescendants">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/v11"
+            android:orientation="horizontal" android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/art_work"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@mipmap/ic_launcher"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/Name"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toRightOf="@id/art_work"
+                android:layout_toEndOf="@+id/art_work"
+                android:singleLine="true"
+                />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/art_work"
+                android:layout_toEndOf="@id/art_work"
+                android:layout_below="@id/Name">
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="20dp"
+                    android:singleLine="true"
+                    android:gravity="clip_horizontal"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/artist"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_toRightOf="@+id/duration"
+                    android:layout_toEndOf="@+id/duration"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:gravity="fill_horizontal"
+                    android:layout_height="20dp"
+                    android:singleLine="true" />
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent">
+
+        <Button
+            android:id="@+id/dots"
+            android:layout_width="40dp"
+            android:textStyle="bold"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="70dp"
+            android:text="@string/vertical_ellipsis"
+            android:textSize="25sp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

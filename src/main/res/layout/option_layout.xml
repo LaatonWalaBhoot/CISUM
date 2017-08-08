@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/menu_shape"
+    android:id="@+id/popup">
+
+    <Button
+        android:layout_height="54dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/play_next"
+        android:text="Play next"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:id="@+id/divider1"
+        android:clickable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/play_next" />
+
+    <Button
+        android:layout_height="54dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/divider1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/add_to_playlist"
+        android:text="Add to playlist"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:id="@+id/divider2"
+        android:clickable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_to_playlist"/>
+
+    <Button
+        android:layout_height="54dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/divider2"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/share"
+        android:text="Share"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:id="@+id/divider3"
+        android:clickable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/share"/>
+
+    <Button
+        android:layout_height="74dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/delete"
+        android:text="Delete"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</RelativeLayout>
+

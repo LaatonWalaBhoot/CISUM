@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_entry_in_dp">140dp</dimen>
+    <dimen name="height_entry_in_dp">240dp</dimen>
+    <dimen name="img">60dp</dimen>
+</resources>
